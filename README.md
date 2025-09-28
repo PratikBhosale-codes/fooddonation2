@@ -1,0 +1,2 @@
+# Food-Donation-app
+The Food Donation App is an Android application designed to reduce food waste and help needy people by connecting donors, NGOs, and individuals in need of food. This app is act as Intermediator Between Donors and NGO's ,some Time Donor want To Help Needy Person By Giving Food but he Not have to time to reach them and help Hence This App Is made. in this app NGO are contact to user by using app andHelp needy persons
