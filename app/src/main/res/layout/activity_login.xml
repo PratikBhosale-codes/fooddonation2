@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginbg"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="244dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:text=" WELCOME BACK"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <!-- Email -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="131dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/login" />
+
+    <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:inputType="textEmailAddress"
+            android:background="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:inputType="textPassword"
+            android:background="#EEEEEE"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="#FF1A1A"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="14sp"/>
+
+        <!-- Sign Up Link -->
+        <TextView
+            android:id="@+id/tvSignUpLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign Up"
+            android:textColor="#0A4E57"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+

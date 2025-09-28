@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0ECC7"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:gravity="center_horizontal">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fooddonationlogo"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Logo" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Want To Share Food?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose any one"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="4dp" />
+
+
+    <!-- Options Row with 3 buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="90dp">
+
+        <!-- Donate Button -->
+        <Button
+            android:id="@+id/btnDonate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#FF9800"
+            android:gravity="center"
+            android:text="Donate"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- Available Food Button (between Donate and NGO Agent) -->
+        <Button
+            android:id="@+id/btnAvailableFood"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#4CAF50"
+            android:gravity="center"
+            android:text="Available Food"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+        <!-- NGO Button -->
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnAshramPlaces"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="70dp"
+            android:text="Nearest Ashram"
+            android:textSize="18dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#4CAF50"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnNGO"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:backgroundTint="#FF9800"
+            android:text="NGO-Agent"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+             />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/illustration"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="105dp"
+        android:src="@drawable/hungrygirl" />
+
+
+</LinearLayout>

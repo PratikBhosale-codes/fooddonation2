@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF5E6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donate Food Details"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Pickup Location -->
+        <EditText
+            android:id="@+id/editDonatename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of Donater"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:layout_marginTop="1dp"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/editdonateno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mob no "
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_marginTop="1dp"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/editPickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pickup location (Enter full address)"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPostalAddress"
+            android:layout_marginTop="1dp"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- Food Item -->
+        <EditText
+            android:id="@+id/editFoodItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Food Item(s)"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="1dp"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Preferred Time -->
+        <EditText
+            android:id="@+id/editPickupTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Pickup Time"
+            android:textColorHint="@color/black"
+            android:background="@color/white"
+            android:focusable="false"
+            android:padding="12dp"
+            android:clickable="true"
+            />
+
+        <!-- Pickup Day -->
+        <EditText
+            android:id="@+id/editPickupDate"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Pickup Date"
+            android:textColorHint="@color/black"
+            android:focusable="false"
+            android:layout_marginTop="14dp"
+            android:padding="12dp"
+            android:clickable="true"/>
+
+
+        <!-- Quantity -->
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 1 kg"
+            android:textColor="@color/black"
+            android:layout_marginTop="14dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <SeekBar
+            android:id="@+id/seekQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:max="100"
+            android:progress="1"/>
+
+
+
+
+        <!-- Checkbox -->
+        <CheckBox
+            android:id="@+id/chkAssure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I assure that food quality and hygiene is maintained."
+            android:textColor="@color/black"
+            android:layout_marginTop="14dp"
+            />
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:backgroundTint="#FF9800"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+</ScrollView>
